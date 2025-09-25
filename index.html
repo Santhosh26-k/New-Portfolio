@@ -768,6 +768,8 @@
             }
             .avatar img {
                 width: min(65%, 280px);
+                display: block !important;
+                visibility: visible !important;
             }
             .stats {
                 grid-template-columns: 1fr;
@@ -784,6 +786,10 @@
         
         /* Mobile Portrait */
         @media (max-width: 640px) {
+            .avatar {
+                display: grid !important;
+                visibility: visible !important;
+            }
             /* Navigation */
             nav ul {
                 display: none;
@@ -844,6 +850,8 @@
             }
             .avatar img {
                 width: min(70%, 250px);
+                display: block !important;
+                visibility: visible !important;
             }
             
             /* Sections */
@@ -951,6 +959,8 @@
             }
             .avatar img {
                 width: min(75%, 220px);
+                display: block !important;
+                visibility: visible !important;
             }
             section {
                 padding: 30px 0;
