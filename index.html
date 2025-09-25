@@ -649,7 +649,7 @@
         }
         /* Responsive */
         
-        @media (max-width: 1024px) {
+        @media (max-width: 1080px) {
             .hero-inner {
                 grid-template-columns: 1fr;
             }
@@ -659,9 +659,7 @@
             .resume-grid {
                 grid-template-columns: 1fr;
             }
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
+            .contact-grid { grid-template-columns: 1fr; }
         }
         
         @media (max-width: 900px) {
@@ -705,6 +703,20 @@
             .hero {
                 padding-top: 40px;
             }
+            .section-head { flex-direction: column; align-items: start; gap: .4rem; }
+            .headline { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+            .lead { font-size: .95rem; }
+            .cta { gap: .6rem; }
+            .avatar img { width: min(70%, 320px); }
+            .timeline li { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: 1fr 1fr; }
+            .socials { justify-items: start; }
+            footer { padding: 28px 0; }
+        }
+
+        @media (min-width: 1280px) {
+            .proj-grid { grid-template-columns: repeat(4, 1fr); }
+            .ach-grid { grid-template-columns: repeat(4, 1fr); }
         }
     </style>
 </head>
@@ -757,7 +769,7 @@
                     <div class="orb cyan"></div>
                     <div class="grid-dots"></div>
                     <div class="avatar">
-                        <img src="./myimgsjjds.png" alt="Profile photo of Santhoshkumar K" />
+                        <img src="./images/myimgsjjds.png" alt="Profile photo of Santhoshkumar K" />
                     </div>
                 </div>
             </div>
@@ -823,8 +835,8 @@
                 <div class="section-head">
                     <h2>Resume</h2>
                     <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
-                        <a href="./My_Resume.pdf" target="_blank" class="btn"><i class="ph ph-file-magnifying-glass"></i> View Resume</a>
-                        <a href="./My_Resume.pdf" download class="btn"><i class="ph ph-file-pdf"></i> Download PDF</a>
+                        <a href="./images/My_Resume.pdf" target="_blank" class="btn"><i class="ph ph-file-magnifying-glass"></i> View Resume</a>
+                        <a href="./images/My_Resume.pdf" download class="btn"><i class="ph ph-file-pdf"></i> Download PDF</a>
                     </div>
                 </div>
 
@@ -894,7 +906,7 @@
                 <div class="proj-grid">
                     <article class="project reveal" data-tags="ml">
                         <div class="thumb">
-                            <img src="./spam.jpg" alt="SMS Spam Prediction project preview" />
+                            <img src="./images/spam.jpg" alt="SMS Spam Prediction project preview" />
                             <div class="hover"><span class="chip">Python • NLP • Streamlit</span></div>
                         </div>
                         <h4>SMS Spam Prediction</h4>
@@ -902,7 +914,7 @@
                     </article>
                     <article class="project reveal" data-tags="web">
                         <div class="thumb">
-                            <img src="./print conn.webp" alt="Print Connect project preview" />
+                            <img src="./images/print conn.webp" alt="Print Connect project preview" />
                             <div class="hover"><span class="chip">Django • SQL • JS</span></div>
                         </div>
                         <h4>Print Connect</h4>
@@ -910,7 +922,7 @@
                     </article>
                     <article class="project reveal" data-tags="web">
                         <div class="thumb">
-                            <img src="./Tender.jpg" alt="Tender Mitra project preview" />
+                            <img src="./images/Tender.jpg" alt="Tender Mitra project preview" />
                             <div class="hover"><span class="chip">React • JS • Firebase</span></div>
                         </div>
                         <h4>Tender Mitra</h4>
@@ -918,7 +930,7 @@
                     </article>
                     <article class="project reveal" data-tags="web">
                         <div class="thumb">
-                            <img src="./voice.png" alt="Voice-Controlled To-Do List App preview" />
+                            <img src="./images/voice.png" alt="Voice-Controlled To-Do List App preview" />
                             <div class="hover"><span class="chip">JavaScript • Speech Recognition • Node.js</span></div>
                         </div>
                         <h4>Voice-Controlled To-Do List App</h4>
@@ -926,7 +938,7 @@
                     </article>
                     <article class="project reveal" data-tags="web">
                         <div class="thumb">
-                            <img src="./eco.webp" alt="Eco Crops project preview" />
+                            <img src="./images/eco.webp" alt="Eco Crops project preview" />
                             <div class="hover"><span class="chip">HTML • CSS • JS • API</span></div>
                         </div>
                         <h4>Eco Crops</h4>
@@ -934,7 +946,7 @@
                     </article>
                     <article class="project reveal" data-tags="ml">
                         <div class="thumb">
-                            <img src="./waste.png" alt="Waste Classification Using Deep Learning project preview" />
+                            <img src="./images/waste.png" alt="Waste Classification Using Deep Learning project preview" />
                             <div class="hover"><span class="chip">Python • CNN • Transfer Learning</span></div>
                         </div>
                         <h4>Waste Classification Using Deep Learning</h4>
@@ -958,55 +970,55 @@
                         <div class="media"><i class="ph ph-database" style="font-size:48px; opacity:.9"></i></div>
                         <h4>SQL and Relational Databases</h4>
                         <p>Completed certification from IBM covering relational concepts and SQL practice.</p>
-                        <footer><button class="btn" data-modal="SQL and Relational Databases – IBM" data-image="./IBM DB0101EN Certificate _ Cognitive Class_page-0001.jpg">View Certificate</button></footer>
+                        <footer><button class="btn" data-modal="SQL and Relational Databases – IBM" data-image="./images/IBM DB0101EN Certificate _ Cognitive Class_page-0001.jpg">View Certificate</button></footer>
                     </article>
                     <article class="ach reveal">
                         <div class="media"><i class="ph ph-chats" style="font-size:48px; opacity:.9"></i></div>
                         <h4>Communication Skills</h4>
                         <p>TCS iON course on professional communication and workplace competencies.</p>
-                        <footer><button class="btn" data-modal="Communication Skills – TCS iON" data-image="./tcs communjj.jpg">View Certificate</button></footer>
+                        <footer><button class="btn" data-modal="Communication Skills – TCS iON" data-image="./images/tcs communjj.jpg">View Certificate</button></footer>
                     </article>
                     <article class="ach reveal">
                         <div class="media"><i class="ph ph-cloud-arrow-up" style="font-size:48px; opacity:.9"></i></div>
                         <h4>Introduction to DevOps</h4>
                         <p>Completed certification from Microsoft Learn covering DevOps principles, CI/CD, and cloud workflows.</p>
-                        <footer><button class="btn" data-modal="Introduction to DevOps – Microsoft Learn" data-image="./devops.jpeg">View Certificate</button></footer>
+                        <footer><button class="btn" data-modal="Introduction to DevOps – Microsoft Learn" data-image="./images/devops.jpeg">View Certificate</button></footer>
                     </article>
                     <article class="ach reveal">
                         <div class="media"><i class="ph ph-robot" style="font-size:48px; opacity:.9"></i></div>
                         <h4>Introduction to Modern AI</h4>
                         <p>Completed Cisco Networking Academy course covering modern AI concepts and applications.</p>
-                        <footer><button class="btn" data-modal="Introduction to Modern AI – Cisco Networking Academy" data-image="./cisco.jpeg">View Certificate</button></footer>
+                        <footer><button class="btn" data-modal="Introduction to Modern AI – Cisco Networking Academy" data-image="./images/cisco.jpeg">View Certificate</button></footer>
                     </article>
                     <article class="ach reveal">
                         <div class="media"><i class="ph ph-brain" style="font-size:48px; opacity:.9"></i></div>
                         <h4>Explore AI</h4>
                         <p>Microsoft Learn course exploring AI fundamentals, machine learning basics, and practical applications.</p>
-                        <footer><button class="btn" data-modal="Explore AI – Microsoft Learn" data-image="./explore ai_page-0001.jpg">View Certificate</button></footer>
+                        <footer><button class="btn" data-modal="Explore AI – Microsoft Learn" data-image="./images/explore ai_page-0001.jpg">View Certificate</button></footer>
                     </article>
                     <article class="ach reveal">
                         <div class="media"><i class="ph ph-code" style="font-size:48px; opacity:.9"></i></div>
                         <h4>Front End Development</h4>
                         <p>Great Learning Academy — HTML, CSS, and JavaScript fundamentals and projects.</p>
-                        <footer><button class="btn" data-modal="Front End Development - Great Learning Academy" data-image="./frontend.jpg">View Certificate</button></footer>
+                        <footer><button class="btn" data-modal="Front End Development - Great Learning Academy" data-image="./images/frontend.jpg">View Certificate</button></footer>
                     </article>
                     <article class="ach reveal">
                         <div class="media"><i class="ph ph-paint-brush" style="font-size:48px; opacity:.9"></i></div>
                         <h4>Web Designing</h4>
                         <p>Great Learning Academy course covering web design principles, UI/UX, and responsive layouts.</p>
-                        <footer><button class="btn" data-modal="Web Designing – Great Learning Academy" data-image="./web des.jpg">View Certificate</button></footer>
+                        <footer><button class="btn" data-modal="Web Designing – Great Learning Academy" data-image="./images/web des.jpg">View Certificate</button></footer>
                     </article>
                     <article class="ach reveal">
                         <div class="media"><i class="ph ph-database" style="font-size:48px; opacity:.9"></i></div>
                         <h4>Introduction to Data Engineering and Big Data</h4>
                         <p>Completed certification from GUVI | HCL covering data engineering concepts, big data fundamentals, and practical applications.</p>
-                        <footer><button class="btn" data-modal="Introduction to Data Engineering and Big Data – GUVI | HCL" data-image="./Guvi.png">View Certificate</button></footer>
+                        <footer><button class="btn" data-modal="Introduction to Data Engineering and Big Data – GUVI | HCL" data-image="./images/Guvi.png">View Certificate</button></footer>
                     </article>
                     <article class="ach reveal">
                         <div class="media"><i class="ph ph-trophy" style="font-size:48px; opacity:.9"></i></div>
                         <h4>Paper Presentation</h4>
                         <p>Presented the paper <em>“PRINTCONNECT: A Digital Bridge Between Students and Print Shop”</em> at the 15th International Conference on Science & Innovative Engineering (IC-SIE 2025), Chennai, India.</p>
-                        <footer><button class="btn" data-modal="PRINTCONNECT: A Digital Bridge Between Students and Print Shop" data-image="./printc.jpeg">View Certificate</button></footer>
+                        <footer><button class="btn" data-modal="PRINTCONNECT: A Digital Bridge Between Students and Print Shop" data-image="./images/printc.jpeg">View Certificate</button></footer>
                     </article>
 
 
@@ -1210,35 +1222,16 @@
                 publicKey: 'YOUR_EMAILJS_PUBLIC_KEY'
             });
         }
-        form.addEventListener('submit', async(e) => {
+        form.addEventListener('submit', (e) => {
             e.preventDefault();
             const name = form.name.value.trim();
             const email = form.email.value.trim();
             const message = form.message.value.trim();
             if (!name || !email || !message) return;
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="ph ph-hourglass"></i> Sending...';
-            try {
-                await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-                    from_name: name,
-                    reply_to: email,
-                    message: message,
-                    to_email: 'santhoshkumar005ksups@gmail.com'
-                });
-                submitBtn.innerHTML = '<i class="ph ph-check"></i> Sent!';
-                form.reset();
-                setTimeout(() => {
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalText;
-                }, 1500);
-            } catch (err) {
-                console.error(err);
-                alert('Failed to send. Please try again later.');
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-            }
+            const subject = encodeURIComponent(`Message from ${name}`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+            const mailto = `mailto:santhoshkumar005ksups@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = mailto;
         });
         waBtn.addEventListener('click', (e) => {
             e.preventDefault();
